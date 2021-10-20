@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pizzeria</title>
+    </head>
+    <body>
+        <div class="row1" id="pizzeria">
+            <a class="active" href="#">Pizzeria</a>
+             <div class="topnav-right">
+                <a href="#viewblock">view menu</a> 
+                <a href="#addtoppings">Suggest Toppings</a> 
+             </div>
+         </div>
+          
+         <div class="row" id="view block">
+             <div class="img_div">
+                 <img class="img-responsive" src="pizza.png">
+             </div>
+             <div class="menu_div">
+                 <button id="menu_list" onclick="getmenu()">Show menu</button>
+                 <div id="display_menu"></div>
+             </div>
+         </div>
+         <div class="newRow" id="addtoppings">
+             <div class="block1">
+                 <input id="add-item" placeholder="type here to add suggestion"> <br><br>
+                 <button class="btn btn-success" onclick="add_top()">Add Suggestion</button> <br><br>
+                 <button id="add_toppings" onclick="add_item()">Show Pizza</button>
+             </div>
+             <div class="block2">
+                 <div id="display_addedmenu">
+                     
+                 </div>
+             </div>
+         </div>
+         
+
+    </body>
+</html>
